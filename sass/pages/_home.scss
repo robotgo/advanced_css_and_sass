@@ -7,6 +7,22 @@
 .section-features {
   padding: 20rem 0;
   margin-top: -10rem;
+  // Попытался заменить skew градиентом, но для горизнотального направления не подходит, так как не адаптируется под ширину. Срез можно настроить абсолютным градусом
+  // background-image: linear-gradient(
+  //         -7deg,
+  //         $color-grey-light-1 0%,
+  //         $color-grey-light-1 25%,
+  //         rgba($color-primary-light, 0.8) 25%,
+  //         rgba($color-primary-dark, 0.8) 85%,
+  //         $color-grey-light-1 85%
+  //       ),
+  //     linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary-light, 0.8),
+  //     rgba($color-primary-dark, 0.8)
+  //   ),
+  //   url("../img/nat-4.jpg");
+
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
@@ -30,4 +46,32 @@
 .section-stories {
   padding: 15rem 0;
   position: relative;
+}
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../../img/nat-10.jpg);
+  background-size: 100%;
+  height: 50rem;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
 }
