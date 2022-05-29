@@ -17,7 +17,7 @@
 
     &:focus {
       outline: none;
-      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      box-shadow: $medium-shadow;
       border-bottom: 3px solid $color-primary;
     }
 

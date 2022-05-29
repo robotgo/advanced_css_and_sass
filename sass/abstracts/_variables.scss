@@ -25,3 +25,9 @@ $default-font-size: 1.6rem;
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// SHADOWS
+$small-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+$medium-shadow: 0 1rem 3rem rgba($color-black, 0.15);
+$large-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+$huge-shadow: 0 2.5rem 5rem rgba($color-black, 0.5);
